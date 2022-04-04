@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Minecraft сервер</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-background navbarfix">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Сервер ФЦДО
+                </a>
+            </div>
+            <a class="btn navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end offcanvas-background" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="Menu">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title text-white" id="Menu">Меню</h2>
+            <div type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Закрыть"><i class="icon-cancel-1" style="font-size: 1.6em; color: white;"></i></div>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active navbar-btn btn" aria-current="page" href="./index.html">Главная</a>
+                        <a class="nav-link active navbar-btn btn" aria-current="page" href="./rules.html">Правила</a>
+                        <a class="nav-link active navbar-btn btn" aria-current="page" href="./rating.html">Рейтинг</a>
+                        <div class="navbar-btn btn close" data-bs-toggle="modal" data-bs-target="#contactsModal"><div type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Закрыть">Контакты</div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center text-white">Minecraft сервер Федерального центра дополнительного образования</h1>
+                    <h6 class="text-center text-white">Версися Minecraft 1.12.2</h6>
+                    <h6 class="text-center text-white">IP: mc.fcdo.ru</h6>
+                    <div class="contacts_btn" data-bs-toggle="modal" data-bs-target="#contactsModal">Контакты</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container bggal" id="gallery">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center text-uppercase mb-3 text-white">Галерея</h2>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-12">
+                <div id="carouselExampleCaptions" class="carousel carousel-white slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/gallery/1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Катакомбы еретиков</h5>
+                                <p>Автор: TS2_YourGame</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gallery/2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Катакомбы еретиков</h5>
+                                <p>Автор: Marsenk51</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gallery/3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Океанский Монастырь</h5>
+                                <p>Автор: Ironic</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gallery/4.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Океанский Монастырь</h5>
+                                <p>Автор: Blaze_DJ</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gallery/5.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Океанский Монастырь</h5>
+                                <p>Автор: Sabky</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gallery/6.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Древо заплутавших душ</h5>
+                                <p>Автор: Goldik</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                    </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+
+    <section class="forwhom" id="info">
+        <div class="container">
+            <div class="row">
+                <div  class="col-12">
+                    <h2 class="text-center text-uppercase mb-5 text-white">Информация о сервере, его особенностях</h2>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="text-center">Карта игровой зоны соответствует карте территорий Российской
+                        Федерации и включает все регионы Страны. Каждый игровой
+                        регион будет содержать определенный тип ресурсов, а
+                        участникам игрового сервера будет необходимо налаживать
+                        торговые отношения и выстраивать договоренности для
+                        взаимовыгодного сотрудничества</h5>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="text-center">Игровые модификации добавляют в игру новые технологические
+                        элементы и позволяют участникам находить новые типы
+                        ресурсов, необходимые для развития важных отраслей
+                        современной жизни (энергетика, космонавтика, биологические
+                        виды новых сельскохозяйственных культур и многое другое)</h5>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="text-center">Команда организаторов систематически проводит
+                        образовательные и развлекательные события (Ивенты): кейс-карты, jumping пазлы, королевские битвы, командные
+                        головоломки и многое другое</h5>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="text-center">В 2023 году сервер откроет свои двери для всех желающих, но уже
+                        сейчас самые преданные любители кубической песочницы могут
+                        подать заявку на beta-тестирование. Торопитесь!</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid bgmods" id="mods">
+        <section class="shedule">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase mb-3">Модификации</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./mods/buildcraft/image.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">BuildCraft</h5>
+                                <p class="card-text">большой технический мод, добавляющий в Minecraft множество механизмов, позволяющих сильно расширить возможности игрока.</p>
+                                <a href="./mods/buildcraft/buildcraft-all-7.99.24.8.jar" class="card-link" download>Скачать</a>
+                                <a href="https://minecraft.fandom.com/ru/wiki/BuildCraft" class="card-link">Википедия</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./mods/MacawsFurniture/image.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Macaw's Furniture</h5>
+                                <p class="card-text">Мод добавит в майнкрафт блоки, который позволят красиво обустроить дом - в основном, это шкафы, да столы. Разновидностей очень много - больше 30 видов, так что можно найти на любой вкус.</p>
+                                <a href="./mods/MacawsFurniture/mcw-furniture-1.0.1-mc1.12.2beta.jar" class="card-link" download>Скачать</a>
+                                <a href="https://minecraft-wiki.com/macaws-furniture/" class="card-link">Википедия</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./mods/GrapplingHookMod/image.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Grappling Hook Mod</h5>
+                                <p class="card-text">Мод Grappling Hook Mod - добавит в майнкрафт крюки или же абордажные кошки которые позволят очень быстро перемещать и взбираться на разные высоты.</p>
+                                <a href="./mods/GrapplingHookMod/grapplemod-1.12.2-v12.3.jar" class="card-link" download>Скачать</a>
+                                <a href="https://minecraft.fandom.com/ru/wiki/Grappling_Hook" class="card-link">Википедия</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./mods/Pamsharvestcraft/image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pam's harvest craft</h5>
+                                <p class="card-text">Мод Pam's harvest craft добавит разнообразит майнкрафт новыми видами овощей и фруктов, а также блюдами из них.</p>
+                                <a href="./mods/Pamsharvestcraft/pamsharvestcraft1.12.2zg.jar" class="card-link" download>Скачать</a>
+                                <a href="https://harvestcraftmod.fandom.com/ru/wiki/HarvestCraft_%D0%92%D0%B8%D0%BA%D0%B8" class="card-link">Википедия</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./mods/JourneyMap/image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JourneyMap</h5>
+                                <p class="card-text">Мод Journey Map - это один из лучших модов на миникарту и карту для майнкрафт, джорни мап имеет множество настроек и полезных функций который пригодятся любому игроку.</p>
+                                <a href="./mods/JourneyMap/journeymap-1.12.2-5.7.1.jar" class="card-link" download>Скачать</a>
+                                <a href="https://minecraft.fandom.com/ru/wiki/JourneyMap" class="card-link">Википедия</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tutotial_btn" data-bs-toggle="modal" data-bs-target="#SetupModal">Как установить?</div>
+            <a class="download_btn" href="./mods/Mods.zip" download="">Скачать всё</a>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-white">© fcdo.ru, 2022.</p> 
+                    <a class="text-white" href="./polit.html">Политика конфиденциальности<br></a> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="contactsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Контакты</h5>
+              <div type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-cancel-1"></i></div>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Команда-организатор сервера: Федеральное государственное
+                    бюджетное образовательное учреждение дополнительного образования
+                    «Федеральный центр дополнительного образования и организации
+                    отдыха и оздоровления детей» (ФГБОУ ДО ФЦДО)
+                </p>         
+            </div>
+            <div class="modal-footer">
+                <a class="contacts_div" href="https://vk.com/FEDCDOMinecraft">
+                    <div><img width="40" height="40" src="./images/VK.png" alt=""></div>
+                </a>
+                <a class="contacts_div" href="https://t.me/FEDCDOMinecraft">
+                    <div><img width="40" height="40" src="./images/Telegram.png" alt=""></div>
+                </a>
+                <a class="contacts_div" href="https://discord.gg/bu7rKvtT">
+                    <div><img width="40" height="40" src="./images/discord.png" alt=""></div>
+                </a>
+                <a type="button" class="contacts_div btn btn-primary" href="https://forms.gle/sQArquNi7R28u48Z7">Записаться на бета-тест</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="SetupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Как установить?</h5>
+              <div type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-cancel-1"></i></div>
+            </div>
+            <div class="modal-body">
+                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/ACSQHPAEt30' frameborder='0' allowfullscreen></iframe></div>           
+            </div>
+        </div>
+      </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

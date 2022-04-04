@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Рейтинг игроков</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-background navbarfix">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Сервер ФЦДО
+            </a>
+            <a class="btn navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end offcanvas-background" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="Menu">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title text-white" id="Menu">Меню</h2>
+            <div type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Закрыть"><i class="icon-cancel-1" style="font-size: 1.6em; color: white;"></i></div>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active navbar-btn btn" aria-current="page" href="./index.html">Главная</a>
+                        <a class="nav-link active navbar-btn btn" aria-current="page" href="./rules.html">Правила</a>
+                        <a class="nav-link active navbar-btn btn" aria-current="page" href="./rating.html">Рейтинг</a>
+                        <div class="navbar-btn btn close" data-bs-toggle="modal" data-bs-target="#contactsModal"><div type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Закрыть">Контакты</div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bggal">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center text-uppercase mb-3 text-white" id="rate">Рейтинг</h2>
+            </div>
+            <div class="col-md-12">
+                <iframe referrerpolicy="no-referrer-when-downgrade" height="1120px" width="100%" style="border:none;" class="rating"
+                src="https://view-awesome-table.com/-MypmRLT8uFwzvE_fTy5/view">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-white">© fcdo.ru, 2022.</p> 
+                    <a class="text-white" href="./polit.html">Политика конфиденциальности<br></a> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="contactsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Контакты</h5>
+              <div type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-cancel-1"></i></div>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Команда-организатор сервера: Федеральное государственное
+                    бюджетное образовательное учреждение дополнительного образования
+                    «Федеральный центр дополнительного образования и организации
+                    отдыха и оздоровления детей» (ФГБОУ ДО ФЦДО)
+                </p>         
+            </div>
+            <div class="modal-footer">
+                <a class="contacts_div" href="https://vk.com/FEDCDOMinecraft">
+                    <div><img width="40" height="40" src="./images/VK.png" alt=""></div>
+                </a>
+                <a class="contacts_div" href="https://t.me/FEDCDOMinecraft">
+                    <div><img width="40" height="40" src="./images/Telegram.png" alt=""></div>
+                </a>
+                <a class="contacts_div" href="https://discord.gg/bu7rKvtT">
+                    <div><img width="40" height="40" src="./images/discord.png" alt=""></div>
+                </a>
+                <a type="button" class="contacts_div btn btn-primary" href="https://forms.gle/sQArquNi7R28u48Z7">Записаться на бета-тест</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="SetupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Как установить?</h5>
+              <div type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-cancel-1"></i></div>
+            </div>
+            <div class="modal-body">
+                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/ACSQHPAEt30' frameborder='0' allowfullscreen></iframe></div>           
+            </div>
+        </div>
+      </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
